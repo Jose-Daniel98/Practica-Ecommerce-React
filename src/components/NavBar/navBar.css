@@ -1,0 +1,24 @@
+.container{
+    background-color: gray;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_brand{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    display: inline;
+}
+
+.nav_link{
+    padding: 0 50px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+}
