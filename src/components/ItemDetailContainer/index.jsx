@@ -1,9 +1,8 @@
-import ItemCount from '../ItemCount';
-import ItemList from '../ItemList';
-import React, {useState, useEffect} from "react";
-import Title from "../Title";
-import { useParams } from "react-router-dom";
+import React, {useState,useEffect} from "react";
 // import {data} from "../../data/data";
+
+import ItemDetail from "../ItemDetail";
+import { useParams } from "react-router-dom";
 
 const films = [
     {id: 1, image: "https://cdn.shopify.com/s/files/1/0074/2290/2323/products/Audifonos-Inalambricos-Apple-Airpods-2_2048x2048.png?v=1643882820", category: 'films', title: "Audífonos Apple Airpods 2", price: "₡ 120.950"},
@@ -14,37 +13,27 @@ const films = [
     {id: 6, image: "https://http2.mlstatic.com/D_NQ_NP_848142-MCR43989593106_112020-O.webp", category: 'series', title: "House Of Marley Positive Vibration Xl Bluetooth *itech", price: "₡ 65,999"},
 ];
 
-export const ItemListContainer =  ({texto}) => {
+export const ItemDetailContainer = () =>{
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState({});
 
-    const {categoriaId} = useParams();
+    const {detalleId} = useParams();
 
     useEffect(() =>{
-        const getData = new Promise(resolve => {
-            setTimeout(() =>{
-                resolve(films)
+        const getData = new Promise(resolve =>{
+            setTimeout(() => {
+                resolve(films);
             }, 2000);
         });
-        if (categoriaId) {
-            getData.then(res => setData(res.filter(film => film.category === categoriaId)));
-        }else{
-            getData.then(res => setData(res));
-        }
+        getData.then(res => setData(res.find(film => film.id === parseInt(detalleId))));
+    }, [])
 
-    }, [categoriaId])
-
-    
-
-    return (
-        <>
-        <Title greeting={texto}/>
-        <ItemList data={data}/>
-        </>
+    return(
+        <ItemDetail data={data} />
     );
 }
 
-export default ItemListContainer;
+export default ItemDetailContainer;
 
 // const [product, setProdct] = useState();
 
@@ -56,7 +45,7 @@ export default ItemListContainer;
 
     //         useEffect(() =>{
     //                 getData.then((response) =>{
-    //                     setProdct(response(data));
+    //                     setProdct(response[0]);
     //                 })
     //             }, [])
             

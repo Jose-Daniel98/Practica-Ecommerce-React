@@ -1,0 +1,53 @@
+.container_itemDetail{
+    width: 98%;
+    margin: auto;
+}
+
+@media screen and (min-width:768px) {
+    .container_itemDetail{
+        width: 70%;
+    }
+
+    .detail_itemDetail{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .detail_image{ 
+        width: 100%;
+    }
+
+    .content_itemDetail{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .detail_image{
+        width: 50%;
+    }
+
+    .content_itemDetail{
+        padding-left: 3rem;
+        width: 50%;
+    }
+}
+
+/* Estilos botón Terminar Compra */
+.botonItemDetail a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: 	#0000FF;
+    border: 1px solid #0000FF;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.botonItemDetail a:hover{
+    background: #0000FF;
+    color: #fff;
+}

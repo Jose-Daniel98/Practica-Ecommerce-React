@@ -1,26 +1,29 @@
-import React from "react";
+import {NavLink} from "react-router-dom";
 import CartWidget from "../CartWidget";
+import Logo from "../../assets/Logo.png"
 import "./navBar.css";
 
+import React from "react";
 
 export const NavBar = () => {
     return (
-        <div className="container">
+        <div className="container_navbar">
             <nav className="nav">
                 <div className="nav_brand">
-                    <a className="nav_link" href="https://www.google.com/">🏠</a>
+                    <NavLink className="nav_link" to='/'><img src={Logo} alt="Logo"/></NavLink>
+                    {/* <NavLink className="nav_link" to='/'>MiMarca</NavLink> */}
                 </div>
                 <ul className="nav_list">
                     <li>
-                        <a className="nav_link" href="https://www.google.com/">Nosotros</a>
+                        <NavLink className="nav_link" to='/categoria/films'>Inalámbricos</NavLink>
                     </li>
                     <li>
-                        <a className="nav_link" href="https://www.google.com/">Productos</a>
+                        <NavLink className="nav_link" to='/categoria/series'>Con Cable</NavLink>
                     </li>
                     <li>
-                        <a className="nav_link" href="https://www.google.com/">
+                        <NavLink className="nav_link" to='/cart'>
                             <CartWidget />
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
