@@ -1,7 +1,50 @@
 .counter{
     width: fit-content;
-    background-color: blue;
-    margin: auto;
-    padding: 1rem;
+    border: 1px solid #0000FF;
+    background-color: #fff;
+    margin: 20px;
+    padding: 0.5rem;
     text-align: center;
+}
+
+.pCounter{
+    color: #FF0000;
+}
+
+.spanCounter{
+    font-weight: bold;
+}
+
+/* Estilos botón Sumar y Restar */
+.counter .botonSumarRestar{
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    color: 	#ff8000;
+    border: 1px solid #ff8000;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.counter .botonSumarRestar:hover{
+    background: #ff8000;
+    color: #fff;
+}
+
+/* Estilos botón Agregar al Carrito */
+.botonAgregarCarrito button{
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    color: 	#70FF8B;
+    border: 1px solid #70FF8B;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.botonAgregarCarrito button:hover{
+    background: #70FF8B;
+    color: #fff;
 }

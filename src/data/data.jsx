@@ -35,5 +35,5 @@ export const data = [
         category: 'series',
         title: "House Of Marley Positive Vibration Xl Bluetooth *itech",
         price: "₡ 65,999"
-    },
+    }
 ];

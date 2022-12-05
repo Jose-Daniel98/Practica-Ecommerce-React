@@ -15,10 +15,10 @@ export const NavBar = () => {
                 </div>
                 <ul className="nav_list">
                     <li>
-                        <NavLink className="nav_link" to='/categoria/films'>Inalámbricos</NavLink>
+                        <NavLink className="nav_link" to='/categoria/inalambricos'>Inalámbricos</NavLink>
                     </li>
                     <li>
-                        <NavLink className="nav_link" to='/categoria/series'>Con Cable</NavLink>
+                        <NavLink className="nav_link" to='/categoria/concable'>Con Cable</NavLink>
                     </li>
                     <li>
                         <NavLink className="nav_link" to='/cart'>

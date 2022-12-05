@@ -3,6 +3,16 @@
     margin: auto;
 }
 
+.tituloItemDetail{
+    padding: 10px;
+}
+
+.descripcionItemDetail{
+    padding: 10px;
+    justify-items: center;
+    justify-content: center;
+}
+
 @media screen and (min-width:768px) {
     .container_itemDetail{
         width: 70%;
@@ -37,9 +47,10 @@
 }
 
 /* Estilos botón Terminar Compra */
-.botonItemDetail a{
+.botonItemDetail button{
     text-decoration: none;
     display: inline-block;
+    margin: 20px;
     padding: 10px;
     color: 	#0000FF;
     border: 1px solid #0000FF;
@@ -47,7 +58,7 @@
     transition: all 400ms ease;
 }
 
-.botonItemDetail a:hover{
+.botonItemDetail button:hover{
     background: #0000FF;
     color: #fff;
 }
