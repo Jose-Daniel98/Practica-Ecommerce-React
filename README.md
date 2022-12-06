@@ -53,7 +53,7 @@ Al clickear el botón de `Confirmar compra`, se limpia el carrito y aparece en p
 
 # Tecnologías empleadas
 
-![](https://img.shields.io/badge/<HTML>-<COLOR>) ![](https://img.shields.io/badge/<CSS>-orange) ![](https://img.shields.io/badge/<JAVASCRIPT>-yellow) ![](https://img.shields.io/badge/<REACT>-9cf) ![](https://img.shields.io/badge/<BOOTSTRAP>-blueviolet) ![](https://img.shields.io/badge/<BOOTSTRAP ICONS>-ff69b4) ![](https://img.shields.io/badge/<SWEETALERT>-red)
+![](https://img.shields.io/badge/<HTML>-<COLOR>) ![](https://img.shields.io/badge/<CSS>-orange) ![](https://img.shields.io/badge/<JAVASCRIPT>-yellow) ![](https://img.shields.io/badge/<REACT>-9cf) ![](https://img.shields.io/badge/<BOOTSTRAP>-blueviolet) ![](https://img.shields.io/badge/<BOOTSTRAP_ICONS>-ff69b4) ![](https://img.shields.io/badge/<SWEETALERT>-red)
 
 # Primeros pasos con la aplicación Create React
 
