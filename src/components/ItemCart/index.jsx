@@ -21,25 +21,6 @@ const ItemCart = ({product}) =>{
                 </div>
             </div>
         </div>
-
-        // <div className='container_item'>
-        //     <div className="card">
-        //         <figure>
-        //             <img src= {product.image} alt= {product.title} />
-        //         </figure>
-        //         <div className="contenido_item">
-        //             <h3>Título: {product.title}</h3>
-        //             <p>Cantidad: {product.quantity}</p>
-        //             <p>Precio: ₡ {product.price}</p>
-        //             <p>Subtotal: ₡ {product.quantity * product.price}</p>
-        //         </div>
-        //         <div className="contenido_item">
-        //             <div className="botonEliminarProductoCompra">
-        //                 <button onClick= {() => removeProduct(product.id)}>Eliminar</button>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
     )
 }
 

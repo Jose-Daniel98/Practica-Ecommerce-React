@@ -5,15 +5,7 @@ import React, {useContext} from 'react';
 
 const Item = ({info}) =>{
 
-    return (
-        // <div className='film'>
-        // <img src={info.image} alt='' />
-        // <Link to={`/detalle/${info.id}`} >
-        //     {/* <img src={info.image} alt='' /> */}
-        //     <p>{info.title}</p>      
-        // </Link>
-        // </div>
-                
+    return (                
         <div className='container_item'>
             <div className="card">
                 <figure>

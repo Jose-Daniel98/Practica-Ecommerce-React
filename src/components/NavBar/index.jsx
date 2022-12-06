@@ -11,7 +11,6 @@ export const NavBar = () => {
             <nav className="nav">
                 <div className="nav_brand">
                     <NavLink className="nav_link" to='/'><img src={Logo} alt="Logo"/></NavLink>
-                    {/* <NavLink className="nav_link" to='/'>MiMarca</NavLink> */}
                 </div>
                 <ul className="nav_list">
                     <li>

@@ -34,8 +34,6 @@ const Cart = () =>{
 
     // Función para llenar los campos del formulario
     const hadleInputChange = (event) => {
-        // console.log(event.target.name);
-        // console.log(event.target.value);
         setFormValues({
             ...formValues,
             [event.target.name] : event.target.value,
@@ -61,8 +59,6 @@ const Cart = () =>{
             });
         })
         removeAll()
-        
-        // const orderDoc = doc(db, 'products', res.id);
     }
 
 
